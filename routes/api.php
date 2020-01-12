@@ -13,8 +13,8 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('', function(){
-    return response()->josn('Versión 1.0');
+Route::get('/', function(){
+    return 'Versión 1.0';
 });
 
 Route::resource('devices', 'DeviceController');
