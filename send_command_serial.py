@@ -9,9 +9,9 @@ if(len(sys.argv) < 5):
 
 SENDER = b"A"
 port = sys.argv[1]
-destiny = sys.argv[2].encode("ANSI")
-command = sys.argv[3].encode("ANSI")
-value = sys.argv[4].encode("ANSI")
+destiny = sys.argv[2].encode("ASCII")
+command = sys.argv[3].encode("ASCII")
+value = sys.argv[4].encode("ASCII")
 
 #Preparamos el puerto serial.
 serial_port = serial.Serial(port, baudrate=300, bytesize=8, parity='N', stopbits=1, timeout=1)
