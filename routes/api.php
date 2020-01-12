@@ -17,4 +17,4 @@ Route::get('', function(){
     return response()->josn('Versión 1.0');
 });
 
-Route::resource('device', 'DeciveController');
+Route::resource('devices', 'DeviceController');

@@ -17,6 +17,13 @@ class DeviceController extends Controller
         return response()->json($device);
     }
 
+    function store(Request $request, $id) {
+        $device = new Device();
+        $device->fill($request);
+        $device->save();
+        return response()->json('ok');
+    }
+
     function update(Request $request, $id) {
         $device = Device::find($id);
         $device->fill($request);
