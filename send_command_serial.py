@@ -28,7 +28,7 @@ wait = True
 step = 0
 while wait:
     step = step + 1
-    
+
     #20 segundos de espera.
     if(step >= 20):
         wait = False
