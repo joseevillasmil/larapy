@@ -27,7 +27,7 @@ serial_port.write(b'\r')
 wait = True
 step = 0
 while wait:
-    ++step
+    step = step + 1
     print("Intento ")
     print(step)
     print("\n")
