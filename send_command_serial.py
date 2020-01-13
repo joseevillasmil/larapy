@@ -28,10 +28,10 @@ wait = True
 step = 0
 while wait:
     ++step
+    print("Intento " + step + "\n")
     #20 segundos de espera.
     if(step >= 20):
         wait = False
-     
     #Leemos la entrada.
     response = serial_port.readline()
     #Imprimios lo que llega
