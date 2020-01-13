@@ -31,6 +31,7 @@ while wait:
     #20 segundos de espera.
     if(step >= 20):
         wait = False
+     
     #Leemos la entrada.
     response = serial_port.readline()
     #Imprimios lo que llega
