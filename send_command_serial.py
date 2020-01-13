@@ -28,7 +28,9 @@ wait = True
 step = 0
 while wait:
     ++step
-    print("Intento " + step + "\n")
+    print("Intento ")
+    print(step)
+    print("\n")
     #20 segundos de espera.
     if(step >= 20):
         wait = False
